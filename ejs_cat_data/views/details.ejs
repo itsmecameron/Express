@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Cats</title>
+</head>
+
+<body>
+    <div class="container">
+        <% for (var x in cats) { %>
+        <h1>Detail Page for <%= cats[x].name %></h1>
+        <div class="text-center">
+            <img class="d_img" src="<%= cats[x].img %>" alt="cats" class="rounded">
+        </div>
+        <h3 class="food">Favorite food: <%= cats[x].favFood %></h3>
+        <h3 class="age">Age: <%= cats[x].age %></h3>
+        <div class="sleep">
+            <h2>Sleeping spots:</h2>
+            <% for (var x in cats[0].sleepSpot) { %>
+                <h4><%= cats[0].sleepSpot[x] %></h4>
+            <% } %>
+        </div>
+        <hr>
+        <% } %>
+    </div>
+</body>
+
+</html>

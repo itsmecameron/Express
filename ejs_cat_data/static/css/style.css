@@ -1,0 +1,18 @@
+img{
+    width: 20vw;
+}
+
+.d_img{
+    width: 25vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+.food{
+    background-color: #D495D5;
+}
+.age{
+    background-color: #C16BC3;
+}
+.sleep{
+    background-color: #A232AB;
+}
